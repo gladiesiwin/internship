@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification Preferences</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f1f3f6;
+        }
+
+        .navbar {
+            background: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .sidebar {
+            width: 30%;
+            background: #fff;
+            padding: 30px;
+            border: 1px solid #ddd;
+            height: 150px;
+        }
+
+        .sidebar h3 {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .sidebar p {
+            font-size: 24px;
+        }
+
+        .content {
+            width: 70%;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 30px;
+        }
+
+        .content h2 {
+            margin-bottom: 30px;
+        }
+
+        .item {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item label {
+            font-size: 26px;
+        }
+
+        .item p {
+            color: #888;
+            margin-left: 30px;
+            margin-top: 5px;
+        }
+
+        .right-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .bell {
+            font-size: 100px;
+            color: red;
+        }
+
+        .warning {
+            color: #ff6161;
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .help {
+            margin-top: 30px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div>Electronics</div>
+        <div>TVs & Appliances</div>
+        <div>Men</div>
+        <div>Women</div>
+        <div>Baby & Kids</div>
+        <div>Home & Furniture</div>
+        <div>Sports, Books & More</div>
+        <div>Flights</div>
+        <div>Offer Zone</div>
+    </div>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <h3>🔔 NOTIFICATION PREFERENCES</h3>
+            <p>Desktop Notifications</p>
+        </div>
+
+        <div class="content">
+            <h2>Desktop Notifications</h2>
+
+            <div class="item">
+                <input type="checkbox" checked>
+                <label>Student Dashboard</label>
+                <p>Latest updates on your orders</p>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" checked>
+                <label>Course Dashboard</label>
+                <p>Price Drops, Back-in-stock Products, etc.</p>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" checked>
+                <label>Employee Dashboard</label>
+                <p>offers and curated content</p>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" checked>
+                <label> New Offers</label>
+                <p>Top Deals and more</p>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" checked>
+                <label>Hospital Dashboard</label>
+                <p>Hospital updates, newsletters, etc.</p>
+            </div>
+
+            <div class="item">
+                <input type="checkbox" checked>
+                <label>Library Dashboard</label>
+                <p>Ratings and reviews for your purchase</p>
+            </div>
+
+            <div class="right-section">
+                <div class="bell">🔕</div>
+
+                <p class="warning">
+                    Oops! You are missing out on a lot of important notifications.
+                    Please switch it on from Browser Settings.
+                </p>
+
+                <div class="help">
+                    <h3>How to Unblock</h3>
+                    <p>🔒 Notifications > Allow</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
