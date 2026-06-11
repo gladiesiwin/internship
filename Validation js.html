@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body style="background-color: rgb(162, 245, 238);">
+
+    <h2>Login Form</h2>
+
+    <form onsubmit="return validate()">
+        Name:
+        <input type="text" id="name"><br><br>
+
+        Password:
+        <input type="password" id="pass"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function validate() {
+            let name = document.getElementById("name").value;
+            let pass = document.getElementById("pass").value;
+
+            if (name == "" || pass == "") {
+                alert("All fields are required!");
+                return false;
+            }
+
+            alert("Form Submitted Successfully!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>
