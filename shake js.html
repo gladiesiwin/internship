@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Animation</title>
+</head>
+<body style="background-color: rgb(191, 160, 241); text-align: center; padding-top: 100px;">
+
+    <button id="btn">Click Me</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function() {
+            btn.style.transform = "translateX(-5px)";
+
+            setTimeout(() => {
+                btn.style.transform = "translateX(5px)";
+            }, 100);
+
+            setTimeout(() => {
+                btn.style.transform = "translateX(0)";
+            }, 200);
+        });
+    </script>
+
+</body>
+</html>
