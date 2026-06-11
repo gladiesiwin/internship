@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+
+    <script>
+        function showAlert() {
+            document.getElementById("message").innerHTML = "Hello, World!";
+            alert("Button clicked!");
+        }
+
+        function clicksubmit() {
+            let name = document.getElementById("name").value;
+            document.getElementById("message").innerHTML =
+                "Submitted Name: " + name;
+            console.log("Submitted Name: " + name);
+            return false;
+        }
+    </script>
+</head>
+<body>
+
+    <form onsubmit="return clicksubmit();">
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <button type="submit">Submit</button>
+
+        <button type="button" onclick="showAlert()">
+            Click Here
+        </button>
+
+        <button type="button"
+                onclick="window.location.href='home-bs.html'">
+            Go Home
+        </button>
+
+        <br><br>
+
+        <img src="flower.jpg.jpg"
+             alt="image22"
+             width="200"
+             style="cursor:pointer;"
+             onclick="window.location.href='home-bs.html'">
+
+        <p id="message"></p>
+    </form>
+
+</body>
+</html>
